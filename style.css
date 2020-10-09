@@ -1,11 +1,14 @@
 body{
 	margin: 0;
+	font-family: 'Sansita Swashed', cursive;
 }
+/** setup for clock **/
 .container{
 	height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	justify-content: center;
 }
 .clock {
@@ -97,3 +100,16 @@ body{
 	border-radius: 5px
 }
 
+/** setup for clock **/
+
+/** setup for copyright **/
+.copyright {
+	margin-top: 2rem
+}
+.copyright a{
+	background: #f00;
+	color: #fff;
+	padding:5px 10px;
+	border-radius: 10px;
+	text-decoration: none
+}
