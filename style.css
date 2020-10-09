@@ -1,0 +1,99 @@
+body{
+	margin: 0;
+}
+.container{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.clock {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background-image: url(clock.png);
+	background-size:100% 100%;
+	border: 15px solid #111;
+	border-radius: 50%;
+	box-shadow: 5px 15px 15px #0008
+}
+
+.clock > .clockwise {
+	background: #000;
+	position: absolute;
+	bottom:50%;
+	transform-origin: bottom; 
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #0003;
+}
+.clock > .hours {
+	background: #222;
+	height: 30%;
+	left:calc(50% - 7px);
+	width: 14px
+}
+
+.clock > .hours:before {
+	content :'';
+	display: block;
+	height: 50px;
+	width: 14px;
+	background: #222;
+	position: absolute;
+	box-shadow: 5px 5px 5px #0003;
+	top: calc(100% - 5px );
+	border-radius: 5px
+}
+
+.clock > .minutes {
+	background: #222;
+	height: 35%;
+	left:calc(50% - 5px);
+	width: 10px
+}
+
+.clock > .minutes:before {
+	content :'';
+	display: block;
+	height: 50px;
+	width: 10px;
+	background: #222;
+	position: absolute;
+	top: calc(100% - 5px );
+	box-shadow: 5px 5px 5px #0003;
+	border-radius: 5px;
+}
+
+.clock > .seconds {
+	background: #f00;
+	height: 40%;
+	left:calc(50% - 3px);
+	width: 6px
+}
+
+
+.clock > .seconds:before {
+	content :'';
+	display: block;
+	height: 50px;
+	width: 6px;
+	background: #f00;
+	position: absolute;
+	box-shadow: 5px 5px 5px #0003;
+	top: calc(100% - 5px );
+	border-radius: 5px
+}
+.clock > .seconds:after {
+	content :'';
+	display: block;
+	height: 50px;
+	width: 10px;
+	background: #f00;
+	position: absolute;
+	box-shadow: 5px 5px 5px #0003;
+	top: calc(100% + 30px );
+	left: -2px;
+	border-radius: 5px
+}
+
